@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Gestión de Calentadores Solares</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .section {
+            background: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 6px solid #27ae60;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Gestión de Calentadores Solares</h1>
+
+    <div class="section">
+        <h2>Usuarios del Sistema</h2>
+        <ul>
+            <li><strong>Administrador:</strong> Puede gestionar usuarios, acceder a panel administrativo, visualizar y exportar logs.</li>
+            <li><strong>Cliente:</strong> Puede ingresar y visualizar el contenido protegido.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Funciones Principales</h2>
+        <ul>
+            <li>Inicio de sesión con autenticación y sesiones.</li>
+            <li>Panel de administración con:
+                <ul>
+                    <li>Alta, edición y eliminación de usuarios.</li>
+                    <li>Control de roles: administrador y cliente.</li>
+                </ul>
+            </li>
+            <li>Registro de actividad:
+                <ul>
+                    <li>Cada acción realizada por un administrador se registra en una tabla <code>logs</code>.</li>
+                    <li>Incluye fecha, usuario y descripción de la acción.</li>
+                </ul>
+            </li>
+            <li>Exportación de logs:
+                <ul>
+                    <li>Descarga de historial de actividades en formato Excel (.xls).</li>
+                </ul>
+            </li>
+            <li>Protección de páginas por rol (solo admin accede al panel).</li>
+            <li>Base de datos MySQL lista para importar.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Archivos Incluidos</h2>
+        <ul>
+            <li><code>login.php</code>: Página de inicio de sesión.</li>
+            <li><code>calentadores.php</code>: Página principal del sistema.</li>
+            <li><code>config.php</code>: Conexión a base de datos mediante variables de entorno.</li>
+            <li><code>auth_content.php</code>: Lógica de sesión.</li>
+            <li><code>admin_panel.php</code>: Panel de administración completo.</li>
+            <li><code>export_logs.php</code>: Exportador de logs a Excel.</li>
+            <li><code>db/calentadores.sql</code>: Script de base de datos MySQL.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        Sistema desarrollado para gestión y control de calentadores solares. &copy; 2025
+    </div>
+</body>
+</html>
